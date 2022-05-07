@@ -1,0 +1,260 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+:root{
+    --primary-color: #0B162B;
+    --button-color: #5558DB;
+    --white-color: #fff;
+    --footer-p-color: rgba(255, 255, 255, .5);
+    --card-color: rgba(11, 22, 43,.5);
+    --section4-color: rgba(248, 248, 248, 1);
+}
+
+/* header section code starts */
+/* header code starts */
+header{
+    display:flex;
+    width:100vw;
+}
+.hs1{
+    background-color:red;
+    width: 100%;
+    flex:1;
+}
+.hs2{
+    background-color: black;
+    width: 100%;
+    flex:1;
+}
+
+
+
+/* section 1 code starts */
+.section1 div img{
+    width:100%;
+    max-width: 100%;
+}
+
+/* section 1 code ends */
+
+
+/* section 2 code starts */
+.section2{
+    background-color: var(--white-color);
+    color: black;
+}
+
+.bolt_card img{
+    width:2em;
+    height:2em;
+}
+.bolt_card{
+    padding: 2em;
+    width: 20em;
+    height: auto;
+    text-align: center;
+    margin-left: .5em;
+    margin-right: .5em;
+    font-size:.8em;
+    margin: auto;
+}
+/* section 2 code ends */
+
+/* section 3 code starts */
+.laptop_section{
+    /* display: flex; */
+    padding-left: 5em;
+    margin: auto;
+}
+.laptop_section img{
+    width: 20em;
+    padding: 2em;
+    /* flex: 1; */
+    margin: auto;
+}
+.sub_laptop_info{
+    line-height: 1.2em;
+}
+.sub_laptop_info button{
+    width: 10em;
+    margin-top: .5em;
+    color: white;
+}
+.laptop_section div{
+    width: 20em;
+    padding: 2em;
+    margin: auto;
+}
+/* section 3 code ends */
+
+/* section 4 starts */
+.card_suit{
+    text-align: center;
+    padding:2em;
+    background-color: var(--section4-color);
+}
+.card{
+    /* border: 1px solid black; */
+    width: 20em;
+    height: 25em;
+    margin: auto;
+    padding: 1.5em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.15);
+
+}
+.card button {
+    margin: .5em;
+    padding: .5em;
+    color: var(--white-color);
+}
+.card h3{
+    font-size: 1.5em;
+}
+.card h1{
+    font-size: 4em;
+}
+.card p{
+    color: var(--card-color);
+}
+.checker img{
+    width:1em;
+    height:1em;
+    margin-right: .3em;
+}
+.checker{
+    text-align: left;
+    line-height: 1.2em;
+}
+.card .btn_2{
+    width: 90%;
+    height: 3em;
+    line-height:1.5em;
+    font-size: bolder;
+}
+/* section 4 code ends */
+
+/* footer code starts */
+footer{
+    background-color: var(--primary-color);
+    color:white;
+    padding: 2em;
+    text-align:center;
+    line-height: 1em;
+    /* display: flex; */
+}
+.footer_top{
+    padding: .9em;
+}
+.footer_top div, form{
+    padding: 1em;
+    line-height: 1.8em;
+}
+.email, button{
+    background-color: var(--button-color);
+    border: none;
+    height: 2.5em;
+}
+.email{
+    width: 25em;
+    padding: 1em;
+    color:var(--white-color);
+}
+.footer_btn{
+    width: 10em;
+    color:var(--white-color);
+    margin:.5em;
+    margin-bottom: 0;
+}
+.footer_links div{
+    margin:1em;
+    line-height:1.5em;
+}
+.footer_links div p{
+    color: var(--footer-p-color);
+}
+.social-links{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
+}
+/* footer code ends */
+
+/* Media Query codes starts */
+@media (min-width: 600px){
+    footer{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer_links{
+        display: flex;
+        flex-direction: row;
+        width:100%;
+        margin: auto;
+        margin-top: 6em;
+        justify-content: space-evenly;
+    }
+    .social-links img{
+        margin: .3em;
+    }
+
+}
+@media (min-width: 800px){ 
+    
+        
+    /* .container1{
+        display:none;
+    } */
+nav{
+    position: relative;
+    width: 80vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction:row;
+}
+/* nav button{
+    margin:auto;
+    margin-left: 1em;
+    margin-right: 1em;
+} */
+nav ul{
+    display: flex;
+    width:50%;
+    margin: auto;
+    justify-content: space-between;
+}
+nav ul li a{
+    height:100%;
+    /* padding:0 4em; */
+}
+
+
+    
+    
+    .container_card{
+        display: flex;
+        justify-content: center;
+    }
+    .card{
+        margin:0;
+        margin-top: 2em;
+        margin-bottom: 2em;
+        box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.15);
+
+    }
+    .laptop_section{
+        display: flex;
+    }
+    .map{
+        flex-direction: row-reverse;
+    }
+    .section2{
+        display: flex;
+    }
+}
+/* Media Query codes ends */

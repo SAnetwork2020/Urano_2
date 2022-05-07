@@ -1,0 +1,289 @@
+header{
+    background-color: var(--primary-color);
+    width:100%;
+    height:100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+/* header code ends */
+
+/* hs1  and its contents code starts */
+.hs1{
+    padding-left: 6em;
+    padding-top: 6em;
+    width: 60vw;
+}
+.hs2{
+    width: 40vw;
+}
+/* form code here */
+.email1{
+    padding: 1em;
+    margin-left: -1em;
+    margin-right: .5em;
+}
+.email1, .header_btn1{
+    background-color: var(--button-color);
+    border: none;
+    height: 2.5em;
+    color:var(--white-color);
+}
+.header_btn1{
+    width: 7em;
+    /* padding: 1em; */
+}
+/* form code end */
+
+/* div2 code starts */
+.div2{
+    display: flex;
+    margin-top: 6em;
+    padding-bottom: .2em;
+}
+.div2 h5{
+    margin-left: .5em;
+}
+.logo2{
+    width: 1em;
+    height: 1em;
+}
+/* div2 code ends */
+
+/* bg_container code starts */
+/* header .bg_container{
+    position: relative;
+    max-width:40vw;
+    height:auto;
+} */
+header .bg_container{
+    max-width: 50vw;
+    background-image: url(/Uran_project/Urano/bg-header.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 50vw;
+    height: 70vh; 
+    resize: both;
+    margin-top: 2em;
+    /* background-position: right; */
+    /* position: absolute;
+    right:0; */
+    /* display: none; */
+}
+/* bg_container code ends */
+
+/* div1 code starts */
+.div1{
+    top: 0;
+    background-color: var(--primary-color);
+    position: fixed;
+    z-index: 9;
+    width: 100vw;
+    padding: 1em;
+    border-bottom: 0.3px solid white;
+    /* display:none; */
+    /* margin-bottom: 8em; */
+}
+/* div1 code ends */
+
+/* container1 and its contents codes starts */
+.container1{
+    display: inline-block;
+    cursor: pointer;
+}
+
+.bar1, .bar2, .bar3{
+    width: 35px;
+    height: 5px;
+    background-color: #fff;
+    margin: 6px 0;
+    transition: 0.4s; 
+}
+.change .bar1{
+    /* -webkit-transform: rotate(-45deg) translate(-9px, 6px); */
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+.change .bar2{
+    opacity: 0;
+}
+.change .bar3{
+    /* -webkit-transform: rotate(45deg) translate(-8px, -8px); */
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.menu_icon{
+    width: 2.0em;
+    position:absolute;
+    right: 2em;
+    bottom: .8em;
+}
+/* .menu_icon:hover{
+    background-color: white;
+    opacity: .8;
+} */
+
+/* container1 code ends */
+/* hs1 and its contents code ends */
+
+/* header section code ends */
+
+ 
+
+
+.hs1{
+    padding-left: 6em;
+    padding-top: 6em;
+    width:50vw;
+    max-width:50vw;
+}
+.show{
+    display:block;
+}
+.hero_img{
+    background: url(/Uran_project/Urano/bg-header.jpg);
+    width: 100%;
+    height:50vh;
+    position: absolute;
+    top:0;
+    right: 0;
+    z-index: -1;
+}
+
+
+
+
+nav{
+    line-height: 3em;
+    background-color: rgb(175, 169, 169);
+    position:fixed;
+    top: 3.4em;
+    right:.5em;
+    width: 50vw;
+    text-align: center;
+    display: none;
+    /* transition:0.05s ease-in; */
+    
+    /* border: 1px solid var(--primary-color); */
+}
+nav button{
+    color: white;
+    width: 8em;
+    margin-bottom: 2em;
+}
+nav button:hover{
+    opacity: .5;
+    background-color: purple;
+}
+nav ul{
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color: var(--primary-color);
+    display:block;
+    text-align: center;
+    font-weight: bolder;
+}
+nav ul li a:hover{
+    background-color:var(--button-color);
+    color: white;
+}
+
+
+=====================================================================================================
+
+===================================================================================
+================================================================
+<header>
+            <!-- <div class="logo_nav">
+                <img src="/Uran_project/Urano/logo.svg">
+            </div> -->
+            <div class="hs1">
+                <div>
+                    <h1>Urano .sketch<br>Template For Free</h1>
+                    <p>Revolutionizing web design experience with simple to use<br>UI kit filled with many features. It is your UI <br>designer wherever you need him.</p>
+            
+                    <form action="">
+                        <input class="email1" type="email" placeholder="Enter your email address" required>
+                        <button class="header_btn1">Get Started</button>
+                    </form>
+                    <p>Try if for free &#8226 No credit card required</p>
+                </div>
+                <div class="div2">
+                    <img class="logo2" src="/Uran_project/Urano/cursor-header.svg" alt="" srcset=""><h5>More about urano</h5>
+                    <div>
+                    <div class="container1 menu_icon" onclick="breadcrumb_menu(this)">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+            </div>
+            <div class="hs2">
+                <div class="container1 menu_icon" onclick="breadcrumb_menu(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </div>                   
+        </header>
+
+
+
+
+
+
+        .logo_nav nav{
+    position:relative;
+    background-color: transparent;
+    width:100%;
+    margin: auto;
+    display:flex;
+    align-items: center;
+    height:3em;
+    top: 0;
+    padding: 1em;   
+    padding-top:4em;
+}
+
+nav ul{
+    /* width:50%; */
+    position:absolute; 
+    right:6em; 
+    display:flex;
+    list-style:none;
+    width:20%;
+    height:3em;
+    justify-content: space-between;
+    align-items:center;
+    padding-left: 1em;
+    
+}
+nav ul li{
+    width:25%;
+    justify-content: space-between;
+    /* background-color: black; */
+}
+nav ul li a{
+    text-decoration: none;
+    color:white;
+    display:block;
+    line-height:2.5em;
+    padding: 0;
+}
+nav ul li a:hover{
+    background-color: #0B162B;
+    opacity: .8;
+}
+.sign_up{
+    width: 25%;
+    height: 2.5em;
+    background-color: #5558DB;
+    border: none;
+    display:block;
+    margin-right: 1em;
+    margin-left: 1em;
+    color: white;
+}
+.sign_up:hover{
+    opacity: .8;
+}
